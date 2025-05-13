@@ -16,8 +16,17 @@ model Task {
   createdAt DateTime
   updatedAt DateTime @updatedAt
 
-
-
-
   @@map("tasks")
+}
+
+mobel User{
+  id         String @id
+  name       String
+  email      String @unique
+  password   String
+  dirthDate  DateTime
+  createAt   DateTime
+  updatedAt  DateTime @updatedAt
+
+  @@map("user")
 }
